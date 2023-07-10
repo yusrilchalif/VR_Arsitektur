@@ -22,6 +22,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Base White
+    second: {fileID: 2100000, guid: 84aa8dd033241f64e93f0c441947b6c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Besi
     second: {fileID: 2100000, guid: 1e9aa447aa4782043920a49157151b0c, type: 2}
   - first:
@@ -47,8 +52,43 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: C02.001
+    second: {fileID: 2100000, guid: fb4ff1b8496bd524094744055757acce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C12.001
+    second: {fileID: 2100000, guid: ca713d7bfcc2efd4395328831dc9ab88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C15.001
+    second: {fileID: 2100000, guid: 04891e430d3b3ad4c8dc6c099fed429d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Ceramic
     second: {fileID: 2100000, guid: d29d2dc4b209f8c4daa10f2a7d823e69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_E01.001
+    second: {fileID: 2100000, guid: 5918c584d93df53428e79995381f811e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_E02.001
+    second: {fileID: 2100000, guid: 8bd58589aef45ae4d8ea194259df4cd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_I01.001
+    second: {fileID: 2100000, guid: eea13b72c3a622947aba434ea2322dc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_L01.001
+    second: {fileID: 2100000, guid: 1301b06a12188b74190b288a72621821, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -64,6 +104,31 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Frame Jendela
     second: {fileID: 2100000, guid: 4f76f3199b9289c47910258b5323992a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GDLM44_builtInMatBlackTyre.001
+    second: {fileID: 2100000, guid: b64fb3933f851634aad46fdb1a3d80ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GDLM45_BrakeShoe.001
+    second: {fileID: 2100000, guid: d5810286b24df3d4d8a0dbe2c61ed9a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GDLM46_BrakeDisk.001
+    second: {fileID: 2100000, guid: 15d47c690ceea6647a523894b4aa14f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass-Lamp.001
+    second: {fileID: 2100000, guid: e612678111117f84c8e124b146fb83cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass.001
+    second: {fileID: 2100000, guid: a6f06b00dd44d2f49bb0d0a9724ccaa2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -89,6 +154,36 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Lantai
     second: {fileID: 2100000, guid: 4ee1386e25f928b418648aef15980cb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal-Chrome.001
+    second: {fileID: 2100000, guid: 0c4a8853078e1c342b80b36d6fbc7056, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal-Iron.001
+    second: {fileID: 2100000, guid: 7aaaf77d853535a4b994e2555043d605, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal-Stainless_Steel.001
+    second: {fileID: 2100000, guid: 755694c9daa4eae4e863648a8fd7717e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal-Zinc.001
+    second: {fileID: 2100000, guid: e752bf21ee6e0c24cad627c07f32b831, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Misc-Ice.001
+    second: {fileID: 2100000, guid: 920f64c739f331545ab17d5e04e4d243, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paving-Asphalt_Smooth.001
+    second: {fileID: 2100000, guid: 40a712c40536a7d4dbc741638d5e02c5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -124,6 +219,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Steel
     second: {fileID: 2100000, guid: 97ddf185d0a5e1046981ab9bf02f92d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Surface-Whitewash.001
+    second: {fileID: 2100000, guid: 038f2ab18bf30c642b0567de1ce79dfe, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
