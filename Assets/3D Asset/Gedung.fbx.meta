@@ -22,6 +22,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Banner
+    second: {fileID: 2100000, guid: a0244ec6a1697f04f986166b502d54d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bark_Frond_Mat
+    second: {fileID: 2100000, guid: 02efbcd17a12ac945b438af13ec78787, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Base White
     second: {fileID: 2100000, guid: 84aa8dd033241f64e93f0c441947b6c3, type: 2}
   - first:
@@ -49,6 +59,21 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Black_Steel
     second: {fileID: 2100000, guid: 3087c1998fed06a42a3d09cafb4cc6ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Broadleaf_Desktop_Field_Mat.001
+    second: {fileID: 2100000, guid: 545f7e4ddbfe2564a9bd5ef0fae996f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Broadleaf_Hero_Field_Mat
+    second: {fileID: 2100000, guid: b423e7fea424e9b4fa4950440f151fc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bush_Mediteranean_Frond_Mat
+    second: {fileID: 2100000, guid: 43a30244ca5cd7942812da2e157a8031, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -122,6 +147,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Garis Oren
+    second: {fileID: 2100000, guid: 84e70b5b7bdf5604c810d8c50920bc81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garis Putih
+    second: {fileID: 2100000, guid: 1e543f90cb957cf45b76debd3e2e1528, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Glass-Lamp.001
     second: {fileID: 2100000, guid: e612678111117f84c8e124b146fb83cf, type: 2}
   - first:
@@ -154,6 +189,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Lantai
     second: {fileID: 2100000, guid: 4ee1386e25f928b418648aef15980cb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Bark_Mat.001
+    second: {fileID: 2100000, guid: 504bf02684779b3489c2af4fc62c6ec5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Bark_Mat.002
+    second: {fileID: 2100000, guid: 3d782a0ff00d1b34fbc0d18d7c464316, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
