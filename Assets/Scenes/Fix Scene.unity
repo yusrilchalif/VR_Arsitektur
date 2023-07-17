@@ -400,6 +400,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4266630484147473633, guid: f062c39b816234c4fb9c352b57b58222,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1811705414950065483, guid: f062c39b816234c4fb9c352b57b58222,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -280056625569163347, guid: f062c39b816234c4fb9c352b57b58222,
         type: 3}
       propertyPath: m_RootOrder
@@ -424,6 +434,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5944936334362997002, guid: f062c39b816234c4fb9c352b57b58222,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7478605243898260616, guid: f062c39b816234c4fb9c352b57b58222,
         type: 3}
@@ -1361,7 +1376,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   m_RaycastTriggerInteraction: 1
   m_HitClosestOnly: 0
   m_HoverToSelect: 0
