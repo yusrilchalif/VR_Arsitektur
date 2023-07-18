@@ -1,70 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.InputSystem;
+using UnityEngine.XR;
 
 public class PointerController : MonoBehaviour
 {
-    [SerializeField] LineRenderer pointerLaser;
+    public XRController controller;
+    public XRRayInteractor rayInteractor;
 
-    private XRController controller;
-    bool isLaserActive = false;
+    private bool isRayInteractorEnabled = true;
 
-    private GameObject currentHitObject;
-    private OutlineLaserHit laserHit;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        controller = GetComponent<XRController>();
-    }
+        // Mendapatkan input dari tombol Axis2D SecondaryButton pada kontroler Oculus Quest
+        bool secondaryButtonPressed = controller.inputDevice.IsPressed(InputHelpers.Button.Secondary2DAxisClick);
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (controller.inputDevice.IsPressed(InputHelpers.Button.PrimaryButton, out bool isPressed))
+        // Mengubah status RayInteractor berdasarkan input tombol Axis2D SecondaryButton
+        if (secondaryButtonPressed)
         {
-            if(isPressed)
-            {
-                ToogleLaserPointer();
-            }
+            isRayInteractorEnabled = !isRayInteractorEnabled;
+            rayInteractor.enabled = isRayInteractorEnabled;
         }
-
-        RaycastHit hit;
-        if(Physics.Raycast(transform.position, transform.forward, out hit))
-        {
-            GameObject hitObject = hit.collider.gameObject;
-
-            if(hitObject != currentHitObject)
-            {
-                if(laserHit != null)
-                {
-                    laserHit.OnPointerExit(null);
-                }
-
-                laserHit = hitObject.GetComponent<OutlineLaserHit>();
-                if(laserHit != null)
-                {
-                    laserHit.OnPointerEnter(null);
-                }
-                currentHitObject = hitObject;
-            }
-        }
-        else
-        {
-            if(laserHit != null)
-            {
-                laserHit.OnPointerExit(null);
-                laserHit = null;
-            }
-            currentHitObject = null;
-        }
-    }
-
-    void ToogleLaserPointer()
-    {
-        isLaserActive = !isLaserActive;
-        pointerLaser.enabled = isLaserActive;
     }
 }
