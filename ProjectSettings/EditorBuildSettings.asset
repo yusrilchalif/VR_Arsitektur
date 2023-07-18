@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fix Scene.unity
     guid: 141aa6a47432e4695bb31d8ce2cbb859
+  - enabled: 1
+    path: Assets/Scenes/Testing Full Body.unity
+    guid: a5bb0a26ec49b44b99c7c931ef77b7ad
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6710c1f0644f6445497d6af6f1bf6599,
       type: 2}
