@@ -9231,7 +9231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78d18cd0a16b4445b818fcda3ca6b961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputActions: {fileID: 0}
 --- !u!210 &1325822252
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -12429,8 +12428,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78d18cd0a16b4445b818fcda3ca6b961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputActions: {fileID: -944628639613478452, guid: 5eb3d218499c44cb4861aa26bb35b4b2,
-    type: 3}
 --- !u!64 &1776839681
 MeshCollider:
   m_ObjectHideFlags: 0
