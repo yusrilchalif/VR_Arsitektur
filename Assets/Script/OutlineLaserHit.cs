@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class OutlineLaserHit : MonoBehaviour
 {
@@ -9,9 +11,16 @@ public class OutlineLaserHit : MonoBehaviour
     private GameObject lastHitObject; // Objek terakhir yang terkena ray
     private Outline lastHitOutline; // Komponen Quick Outline pada objek terakhir yang terkena ray
 
+    public InputActionAsset inputActions;
+    private InputAction laserController;
+
     void Start()
     {
         rayInteractor = GetComponent<XRRayInteractor>(); // Dapatkan komponen XR Ray Interactor
+
+        laserController = inputActions.FindActionMap("XRI LeftHand").FindAction("LaserPointer");
+        laserController.Enable();
+        laserController.performed += ActiveLaser;
     }
 
     void Update()
@@ -68,5 +77,15 @@ public class OutlineLaserHit : MonoBehaviour
             lastHitObject = null;
             lastHitOutline = null;
         }
+    }
+
+    private void OnDestroy()
+    {
+        laserController.performed -= ActiveLaser;
+    }
+
+    public void ActiveLaser(InputAction.CallbackContext context)
+    {
+        rayInteractor.enabled = !rayInteractor.enabled;
     }
 }
