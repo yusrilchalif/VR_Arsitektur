@@ -14,6 +14,11 @@ public class OutlineLaserHit : MonoBehaviour
     public InputActionAsset inputActions;
     private InputAction laserController;
 
+    private void Awake()
+    {
+        lastHitOutline.enabled = false;
+    }
+
     void Start()
     {
         rayInteractor = GetComponent<XRRayInteractor>(); // Dapatkan komponen XR Ray Interactor
