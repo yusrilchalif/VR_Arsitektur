@@ -8,31 +8,23 @@ public class WirstUI : MonoBehaviour
 {
     public InputActionAsset inputActions;
 
-    private Canvas wristCanvas;
-    private InputAction menu;
-
-    // Start is called before the first frame update
-    void Start()
+    private Canvas _wristUICanvas;
+    private InputAction _menu;
+    private void Start()
     {
-        wristCanvas = GetComponent<Canvas>();
-        menu = inputActions.FindActionMap("XRI LeftHand").FindAction("Menu");
-        menu.Enable();
-        menu.performed += ToogleMenu;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _wristUICanvas = GetComponent<Canvas>();
+        _menu = inputActions.FindActionMap("XRI LeftHand").FindAction("Menu");
+        _menu.Enable();
+        _menu.performed += ToggleMenu;
     }
 
     private void OnDestroy()
     {
-        menu.performed -= ToogleMenu;
+        _menu.performed -= ToggleMenu;
     }
 
-    public void ToogleMenu(InputAction.CallbackContext context)
+    public void ToggleMenu(InputAction.CallbackContext context)
     {
-        wristCanvas.enabled = !wristCanvas.enabled;
+        _wristUICanvas.enabled = !_wristUICanvas.enabled;
     }
 }
