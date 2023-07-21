@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
@@ -8,7 +9,7 @@ public class WirstUI : MonoBehaviour
 {
     public InputActionAsset inputActions;
 
-    private Canvas _wristUICanvas;
+    [SerializeField] private Canvas _wristUICanvas;
     private InputAction _menu;
     private void Start()
     {
