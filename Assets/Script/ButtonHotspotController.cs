@@ -43,12 +43,12 @@ public class ButtonHotspotController : MonoBehaviour, IPointerEnterHandler, IPoi
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        transform.DOScale(new Vector3(0.02f, 0.02f, 0.02f), 0.3f);
+        transform.DOScale(new Vector3(1.2f, 1.2f, 1.22f), 0.3f);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        transform.DOScale(new Vector3(0.01497409f, 0.01497409f, 0.01497409f), 0.3f);
+        transform.DOScale(new Vector3(1f, 1f, 1f), 0.3f);
     }
 
     public void OnPointerClick(PointerEventData eventData)
