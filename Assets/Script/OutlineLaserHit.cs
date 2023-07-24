@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class OutlineLaserHit : MonoBehaviour
 {
     public string targetTag = "Interactable"; // Ganti "YourTargetTag" dengan tag yang ingin Anda targetkan
+    public Color outlineColor = Color.red;
 
     private XRInteractorLineVisual lineVisual;
     private Outline outlineScript;
@@ -53,6 +54,8 @@ public class OutlineLaserHit : MonoBehaviour
                     outlineScript = hitObject.AddComponent<Outline>();
                     outlineScript.OutlineWidth = 5f; // Sesuaikan ketebalan outline sesuai keinginan Anda
                 }
+
+                outlineScript.OutlineColor = outlineColor;
 
                 currentHitObject = hitObject;
             }
