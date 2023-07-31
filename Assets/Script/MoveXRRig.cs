@@ -5,23 +5,22 @@ using UnityEngine.XR;
 
 public class MoveXRRig : MonoBehaviour
 {
-    public Transform spawnPointPosition;
-    [SerializeField] GameObject XRRig;
+    public Transform xrOrigin;
+    public Transform[] spawnPoints;
 
-    // Start is called before the first frame update
-    void Start()
+    public void SetSpawnPoint(int spawnIndex)
     {
-       // Invoke("MoveAvatar", 3f);
-    }
+        // Mendapatkan referensi posisi dan rotasi spawn point yang dipilih
+        Vector3 spawnPosition = spawnPoints[spawnIndex].position;
+        Quaternion spawnRotation = spawnPoints[spawnIndex].rotation;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        // Pindahkan XR Origin ke spawn point
+        xrOrigin.position = spawnPosition;
+        xrOrigin.rotation = spawnRotation;
 
-    public void MoveAvatar()
-    {
-        XRRig.transform.position = spawnPointPosition.position;
-    }
+        // Pindahkan avatar ke spawn point (asumsi avatar adalah child dari xrOrigin)
+        Transform avatarTransform = xrOrigin.GetChild(0);
+        avatarTransform.position = spawnPosition;
+        avatarTransform.rotation = spawnRotation;
+    }    
 }
