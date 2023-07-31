@@ -14,13 +14,15 @@ public class MoveXRRig : MonoBehaviour
         Vector3 spawnPosition = spawnPoints[spawnIndex].position;
         Quaternion spawnRotation = spawnPoints[spawnIndex].rotation;
 
-        // Pindahkan XR Origin ke spawn point
-        xrOrigin.position = spawnPosition;
-        xrOrigin.rotation = spawnRotation;
-
-        // Pindahkan avatar ke spawn point (asumsi avatar adalah child dari xrOrigin)
+        // Mendapatkan posisi avatar saat ini (asumsi avatar adalah child dari xrOrigin)
         Transform avatarTransform = xrOrigin.GetChild(0);
-        avatarTransform.position = spawnPosition;
-        avatarTransform.rotation = spawnRotation;
-    }    
+        Vector3 avatarPosition = avatarTransform.position;
+
+        // Hitung perbedaan antara posisi avatar dan posisi spawn point
+        Vector3 positionOffset = spawnPosition - avatarPosition;
+
+        // Pindahkan XR Origin ke spawn point tanpa mengubah tinggi karakter
+        xrOrigin.position += new Vector3(positionOffset.x, 0f, positionOffset.z);
+        xrOrigin.rotation = spawnRotation;
+    }
 }
