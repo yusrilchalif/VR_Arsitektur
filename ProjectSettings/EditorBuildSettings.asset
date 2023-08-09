@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 72383d4eac3ed4530b24e6bdc9fe3b55
-  - enabled: 0
-    path: Assets/Scenes/Fix Scene.unity
-    guid: 141aa6a47432e4695bb31d8ce2cbb859
   - enabled: 1
     path: Assets/Scenes/Testing Full Body.unity
     guid: a5bb0a26ec49b44b99c7c931ef77b7ad
