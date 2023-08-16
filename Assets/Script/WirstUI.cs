@@ -9,23 +9,24 @@ public class WirstUI : MonoBehaviour
 {
     public InputActionAsset inputActions;
 
-    [SerializeField] private Canvas _wristUICanvas;
-    private InputAction _menu;
+    [SerializeField] private Canvas wristUICanvas;
+    private InputAction menu;
+
     private void Start()
     {
-        _wristUICanvas = GetComponent<Canvas>();
-        _menu = inputActions.FindActionMap("XRI LeftHand").FindAction("Menu");
-        _menu.Enable();
-        _menu.performed += ToggleMenu;
+        wristUICanvas = GetComponent<Canvas>();
+        menu = inputActions.FindActionMap("XRI LeftHand").FindAction("Menu");
+        menu.Enable();
+        menu.performed += ToggleMenu;
     }
 
     private void OnDestroy()
     {
-        _menu.performed -= ToggleMenu;
+        menu.performed -= ToggleMenu;
     }
 
     public void ToggleMenu(InputAction.CallbackContext context)
     {
-        _wristUICanvas.enabled = !_wristUICanvas.enabled;
+        wristUICanvas.enabled = !wristUICanvas.enabled;
     }
 }
