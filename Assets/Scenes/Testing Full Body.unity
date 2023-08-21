@@ -15709,7 +15709,12 @@ PrefabInstance:
     - target: {fileID: 5944936334362997002, guid: aa01f82a5bd583f41a9c420c1e894401,
         type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5944936334362997002, guid: aa01f82a5bd583f41a9c420c1e894401,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5944936334362997002, guid: aa01f82a5bd583f41a9c420c1e894401,
         type: 3}
@@ -25904,7 +25909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputActions: {fileID: -944628639613478452, guid: 5eb3d218499c44cb4861aa26bb35b4b2,
     type: 3}
-  wristUICanvas: {fileID: 0}
+  wristUICanvas: {fileID: 1184867606}
 --- !u!64 &1188965262
 MeshCollider:
   m_ObjectHideFlags: 0
