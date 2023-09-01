@@ -2,19 +2,22 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using UnityEngine.EventSystems;
 
 namespace YoutubePlayer
 {
     public class PlayVideo : MonoBehaviour
-    {
+    { 
         public VideoPlayer videoPlayer;
         public YoutubePlayer youtubePlayer;
+        public Material videoMaterial;
 
         Button m_Button;
 
 
         void Awake()
         {
+            videoPlayer.prepareCompleted += VideoPlayerOnPrepareCompleted;
             Prepare();
             m_Button = GetComponent<Button>();
 
@@ -24,7 +27,19 @@ namespace YoutubePlayer
 
         void VideoPlayerOnPrepareCompleted(VideoPlayer source)
         {
-            m_Button.interactable = videoPlayer.isPrepared;
+            videoMaterial.mainTexture = videoPlayer.texture;
+        }
+
+        public void TogglePlayPause()
+        {
+            if (videoPlayer.isPlaying)
+            {
+                PauseVideo();
+            }
+            else
+            {
+                Play();
+            }
         }
 
         public void Play()
@@ -50,5 +65,6 @@ namespace YoutubePlayer
             await youtubePlayer.PrepareVideoAsync();
             Debug.Log("Video ready");
         }
+        
     }
 }
