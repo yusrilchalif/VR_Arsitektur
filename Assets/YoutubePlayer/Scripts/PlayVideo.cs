@@ -6,11 +6,13 @@ using UnityEngine.EventSystems;
 
 namespace YoutubePlayer
 {
-    public class PlayVideo : MonoBehaviour
+    public class PlayVideo : MonoBehaviour, IPointerClickHandler, IPointerDownHandler
     { 
         public VideoPlayer videoPlayer;
         public YoutubePlayer youtubePlayer;
         public Material videoMaterial;
+
+        [SerializeField] Button playVideoBtn;
 
         Button m_Button;
 
@@ -23,6 +25,12 @@ namespace YoutubePlayer
 
             // playButton.interactable = videoPlayer.isPrepared;
             // videoPlayer.prepareCompleted += VideoPlayerOnPrepareCompleted;
+
+            playVideoBtn.onClick.AddListener(() =>
+            {
+                print("Clicked");
+                TogglePlayPause();
+            });
         }
 
         void VideoPlayerOnPrepareCompleted(VideoPlayer source)
@@ -65,6 +73,16 @@ namespace YoutubePlayer
             await youtubePlayer.PrepareVideoAsync();
             Debug.Log("Video ready");
         }
-        
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            print("video play");
+            TogglePlayPause();
+        }
+
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            print("Pointer Down");
+        }
     }
 }
