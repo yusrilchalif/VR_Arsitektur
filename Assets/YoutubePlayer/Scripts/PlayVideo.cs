@@ -9,7 +9,7 @@ namespace YoutubePlayer
     public class PlayVideo : MonoBehaviour, IPointerClickHandler, IPointerDownHandler
     { 
         public VideoPlayer videoPlayer;
-        public YoutubePlayer youtubePlayer;
+        //public YoutubePlayer youtubePlayer;
         public Material videoMaterial;
 
         [SerializeField] Button playVideoBtn;
@@ -19,9 +19,9 @@ namespace YoutubePlayer
 
         void Awake()
         {
-            videoPlayer.prepareCompleted += VideoPlayerOnPrepareCompleted;
-            Prepare();
-            m_Button = GetComponent<Button>();
+            // videoPlayer.prepareCompleted += VideoPlayerOnPrepareCompleted;
+            // Prepare();
+            //m_Button = GetComponent<Button>();
 
             // playButton.interactable = videoPlayer.isPrepared;
             // videoPlayer.prepareCompleted += VideoPlayerOnPrepareCompleted;
@@ -70,7 +70,7 @@ namespace YoutubePlayer
         public async void Prepare()
         {
             Debug.Log("Loading video...");
-            await youtubePlayer.PrepareVideoAsync();
+            //await youtubePlayer.PrepareVideoAsync();
             Debug.Log("Video ready");
         }
 
