@@ -9,7 +9,7 @@ namespace YoutubePlayer
     public class PlayVideo : MonoBehaviour, IPointerClickHandler, IPointerDownHandler
     { 
         public VideoPlayer videoPlayer;
-        //public YoutubePlayer youtubePlayer;
+        public YoutubePlayer youtubePlayer;
         public Material videoMaterial;
 
         [SerializeField] Button playVideoBtn;
