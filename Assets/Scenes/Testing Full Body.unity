@@ -2576,6 +2576,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2951225441125652900, guid: aa01f82a5bd583f41a9c420c1e894401, type: 3}
+--- !u!1 &365054901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3516857995483875008, guid: 8d5c652d822954a0aad35ae5518eaab4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3516857995524540090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &365054906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365054901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!64 &369163004
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12847,7 +12872,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543039954}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 11.711109}
+  m_LocalPosition: {x: 0, y: 0, z: 0.34}
   m_LocalScale: {x: 0.022815475, y: 0.022815475, z: 0.022815475}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -12858,7 +12883,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 40.51112, y: 55.49001}
+  m_AnchoredPosition: {x: 40.51, y: 52.72}
   m_SizeDelta: {x: 719.7842, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1543039959
@@ -33637,7 +33662,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: f238007dc7b02465e8fff290796d7e95,
+      objectReference: {fileID: 32900000, guid: 4aed4befac46c485a8a5edb1e8487141,
         type: 3}
     - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
