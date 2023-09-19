@@ -14,7 +14,7 @@ public class WirstUI : MonoBehaviour
 
     private void Start()
     {
-        //wristUICanvas.gameObject.SetActive(false);
+        wristUICanvas.enabled = false;
 
         wristUICanvas = GetComponent<Canvas>();
         menu = inputActions.FindActionMap("XRI LeftHand").FindAction("Menu");
@@ -29,6 +29,7 @@ public class WirstUI : MonoBehaviour
 
     public void ToggleMenu(InputAction.CallbackContext context)
     {
+        print("check ui");
         wristUICanvas.enabled = !wristUICanvas.enabled;
     }
 }
