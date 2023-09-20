@@ -214,24 +214,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Laser Pointer Active",
-                    "type": "Button",
-                    "id": "a16464d2-fa55-42b7-873c-c407f0ce387d",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Laser Pointer Cancel",
-                    "type": "Button",
-                    "id": "bee9a134-d26e-47e0-9bfc-521449c15675",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -608,39 +590,6 @@
                     "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5604e5df-78c4-4d78-ae7f-41a3bebbb443",
-                    "path": "<XRController>{LeftHand}/primary2DAxisClick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Laser Pointer Active",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1efc9b2e-23ef-4f09-ba74-0f7f24d70d8b",
-                    "path": "<XRController>{LeftHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Laser Pointer Active",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4ab5312b-fc0f-48fa-ad21-7a49a40da865",
-                    "path": "<XRController>{LeftHand}/gripPressed",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Laser Pointer Cancel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -800,6 +749,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "ActiveLaser",
+                    "type": "Button",
+                    "id": "2930c6fa-cddf-4990-942d-97edd875ad4f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1163,6 +1121,17 @@
                     "processors": "StickDeadzone",
                     "groups": "Continuous Move",
                     "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f548dc8e-7824-412f-aaf2-f8bb2c9f0d46",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ActiveLaser",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
