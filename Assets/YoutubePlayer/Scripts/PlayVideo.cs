@@ -9,28 +9,18 @@ namespace YoutubePlayer
     public class PlayVideo : MonoBehaviour, IPointerClickHandler, IPointerDownHandler
     { 
         public VideoPlayer videoPlayer;
-        public YoutubePlayer youtubePlayer;
-        public Material videoMaterial;
+        private Material videoMaterial;
+        public Sprite playButton, pauseButton;
 
         [SerializeField] Button playVideoBtn;
 
         Button m_Button;
+        bool isPlaying = false;
 
-
-        void Awake()
+        void Start()
         {
-            // videoPlayer.prepareCompleted += VideoPlayerOnPrepareCompleted;
-            // Prepare();
-            //m_Button = GetComponent<Button>();
-
-            // playButton.interactable = videoPlayer.isPrepared;
-            // videoPlayer.prepareCompleted += VideoPlayerOnPrepareCompleted;
-
-            playVideoBtn.onClick.AddListener(() =>
-            {
-                print("Clicked");
-                TogglePlayPause();
-            });
+            videoPlayer = GetComponent<VideoPlayer>();
+            playVideoBtn.onClick.AddListener(TogglePlayPause);
         }
 
         void VideoPlayerOnPrepareCompleted(VideoPlayer source)
@@ -40,26 +30,18 @@ namespace YoutubePlayer
 
         public void TogglePlayPause()
         {
-            if (videoPlayer.isPlaying)
+            if(isPlaying)
             {
-                PauseVideo();
+                videoPlayer.Pause();
+                playVideoBtn.image.sprite = playButton;
             }
             else
             {
-                Play();
+                videoPlayer.Play();
+                playVideoBtn.image.sprite = pauseButton;
             }
-        }
 
-        public void Play()
-        {
-            print("play");
-            videoPlayer.Play();
-        }
-
-        public void PauseVideo()
-        {
-            print("pause");
-            videoPlayer.Pause();
+            isPlaying = !isPlaying;
         }
 
         void OnDestroy()
