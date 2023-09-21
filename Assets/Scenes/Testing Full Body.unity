@@ -2461,8 +2461,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 604141189}
   m_HandleRect: {fileID: 604141188}
   m_Direction: 2
-  m_Value: -0.0000006103518
-  m_Size: 0.66663945
+  m_Value: -0.0000012207036
+  m_Size: 0.6654468
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6945,12 +6945,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6957902434426716736, guid: aa01f82a5bd583f41a9c420c1e894401, type: 3}
---- !u!328 &484162783 stripped
-VideoPlayer:
-  m_CorrespondingSourceObject: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
-    type: 3}
-  m_PrefabInstance: {fileID: 3516857995524540090}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &487285306
 GameObject:
   m_ObjectHideFlags: 0
@@ -16209,7 +16203,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 99.999985}
+  m_AnchoredPosition: {x: 0, y: 100.000046}
   m_SizeDelta: {x: -36.96, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1234911395
@@ -21616,7 +21610,6 @@ GameObject:
   - component: {fileID: 1543039956}
   - component: {fileID: 1543039955}
   - component: {fileID: 1543039960}
-  - component: {fileID: 1543039959}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -21707,22 +21700,6 @@ RectTransform:
   m_AnchoredPosition: {x: 40.51, y: 52.72}
   m_SizeDelta: {x: 719.7842, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1543039959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543039954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96f3569deaae64af5b30ff615910f3dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 484162783}
-  playButton: {fileID: 0}
-  pauseButton: {fileID: 0}
-  playVideoBtn: {fileID: 1098178909}
 --- !u!114 &1543039960
 MonoBehaviour:
   m_ObjectHideFlags: 0
