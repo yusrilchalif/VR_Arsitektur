@@ -23,7 +23,7 @@ public class ShowAssitance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -63,12 +63,16 @@ public class ShowAssitance : MonoBehaviour
 
     void ActiveAnimator()
     {
-        assistanceSpawn = Instantiate(assitance, spawnRobot.transform.position, Quaternion.identity);
+        assistanceSpawn = Instantiate(assitance, spawnRobot.transform.position, spawnRobot.transform.rotation);
         assitanceAnimator.SetTrigger("HelloAnim");
+        content.SetActive(true);
     }
 
     void DestoyObject()
     {
         Destroy(assistanceSpawn);
+        content.SetActive(false);
     }
+
+
 }
