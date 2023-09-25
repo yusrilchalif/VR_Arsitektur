@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ShowAssitance : MonoBehaviour
 {
@@ -9,8 +10,9 @@ public class ShowAssitance : MonoBehaviour
     [SerializeField] GameObject content;
 
     public Animator assitanceAnimator;
-    public bool isActive = false;
+    public bool playerInside = false;
     public Transform spawnRobot;
+    public float destroyDelay = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,34 +30,32 @@ public class ShowAssitance : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
+            playerInside = true;
             print("check");
-            ActiveAnimator();
+            if (spawnRobot != null)
+            {
+                ActiveAnimator();
+                //Destroy(assistanceSpawn);
+            }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.CompareTag("Player") && playerInside)
         {
-            print("uncheck");
-            if(spawnRobot != null)
-            {
-                Destroy(assistanceSpawn);
-            }
+            assitanceAnimator.SetTrigger("EndedAnim");
+
+            //wait until animator ended
+            float animatorLength = assitanceAnimator.GetCurrentAnimatorClipInfo(0).Length;
+            Destroy(assistanceSpawn, animatorLength + destroyDelay);
+            
         }
     }
 
     void ActiveAnimator()
     {
-        //    assitance.SetActive(true);
-        //    content.SetActive(true);
-        isActive = true;
         assistanceSpawn = Instantiate(assitance, spawnRobot.transform.position, Quaternion.identity);
-    }
-
-    void DeactiveAnimator()
-    {
-        Destroy(assitance);
-        content.SetActive(false);
+        assitanceAnimator.SetTrigger("HelloAnim");
     }
 }
