@@ -46,10 +46,18 @@ public class ShowAssitance : MonoBehaviour
         {
             assitanceAnimator.SetTrigger("EndedAnim");
 
-            //wait until animator ended
-            float animatorLength = assitanceAnimator.GetCurrentAnimatorClipInfo(0).Length;
-            Destroy(assistanceSpawn, animatorLength + destroyDelay);
-            
+            AnimatorClipInfo[] clipInfo = assitanceAnimator.GetCurrentAnimatorClipInfo(0);
+            if (clipInfo.Length > 0)
+            {
+                float animationLength = clipInfo[0].clip.length;
+                Invoke("DestoyObject", animationLength + destroyDelay);
+            }
+            else
+            {
+                // Tidak ada informasi animasi yang tersedia
+                DestoyObject();
+            }
+
         }
     }
 
@@ -57,5 +65,10 @@ public class ShowAssitance : MonoBehaviour
     {
         assistanceSpawn = Instantiate(assitance, spawnRobot.transform.position, Quaternion.identity);
         assitanceAnimator.SetTrigger("HelloAnim");
+    }
+
+    void DestoyObject()
+    {
+        Destroy(assistanceSpawn);
     }
 }
