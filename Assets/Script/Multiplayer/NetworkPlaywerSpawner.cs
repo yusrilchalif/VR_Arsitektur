@@ -5,17 +5,17 @@ using Photon.Pun;
 
 public class NetworkPlaywerSpawner : MonoBehaviourPunCallbacks
 {
-    private GameObject spawnedPlayerPrefab;
+    private GameObject spawnedPlayer;
 
     public override void OnJoinedRoom()
     {
         base.OnJoinedRoom();
-        spawnedPlayerPrefab = PhotonNetwork.Instantiate("Network Player", transform.position, transform.rotation);
+        spawnedPlayer = PhotonNetwork.Instantiate("Network Player", transform.position, transform.rotation);
     }
 
-    public override void OnLeftRoom()
+    public override void OnLeftLobby()
     {
-        base.OnLeftRoom();
-        PhotonNetwork.Destroy(spawnedPlayerPrefab);
+        base.OnLeftLobby();
+        PhotonNetwork.Destroy(spawnedPlayer);
     }
 }

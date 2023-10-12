@@ -12,18 +12,18 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         ConnectToServer();
     }
 
-    void ConnectToServer() 
+    public void ConnectToServer()
     {
         PhotonNetwork.ConnectUsingSettings();
-        print("try connect to server...");
+        print("try connect to server");
     }
 
     public override void OnConnectedToMaster()
     {
-        print("connect to server...");
+        print("connected to master");
         base.OnConnectedToMaster();
 
-        //room options
+        //Room options
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = 10;
         roomOptions.IsVisible = true;
@@ -32,15 +32,15 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinOrCreateRoom("Room 1", roomOptions, TypedLobby.Default);
     }
 
-    public override void OnJoinedLobby()
+    public override void OnJoinedRoom()
     {
-        print("join a room...");
-        base.OnJoinedLobby();
+        print("Joined a room");
+        base.OnJoinedRoom();
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
-        print("new player joined the room");
+        print("A new player joined the room");
         base.OnPlayerEnteredRoom(newPlayer);
     }
 }

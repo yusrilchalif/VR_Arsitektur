@@ -4,38 +4,72 @@ using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 using Photon.Pun;
+using Unity.XR.CoreUtils;
 
 public class NetworkPlayer : MonoBehaviour
 {
-    public Transform headPos, leftHandPos, rightHandPos;
+    public Animator leftHandAnimator, rightHandAnimator;
+
+    [SerializeField] Transform head, leftHand, rightHand;
+    private Transform headRig, leftHandRig, rightHandRig;
 
     PhotonView pView;
-    private Transform headPosRig, leftHandPosRig, rightHandPosRig;
-
     // Start is called before the first frame update
-    [System.Obsolete]
     void Start()
     {
         pView = GetComponent<PhotonView>();
-        XRRig rig = FindObjectOfType<XRRig>();
+        XROrigin rig = FindObjectOfType<XROrigin>();
+        headRig = rig.transform.Find("Camera Offset/Main Camera");
+        leftHandRig = rig.transform.Find("Camera Offset/Left Controller");
+        rightHandRig = rig.transform.Find("Camera Offset/Right Controller");
 
-        headPosRig = rig.transform.FindChild("Camera Offset/Main Camera");
-        leftHandPosRig = rig.transform.FindChild("Camera Offset/Left Controller");
-        rightHandPosRig = rig.transform.FindChild("Camera Offset/Right Controller");
+        if (pView.IsMine)
+        {
+            foreach (var item in GetComponentsInChildren<Renderer>())
+            {
+                item.enabled = false;
+            }
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(pView.IsMine)
+        if (pView.IsMine)
         {
-            rightHandPos.gameObject.SetActive(false);
-            leftHandPos.gameObject.SetActive(false);
-            headPos.gameObject.SetActive(false);
 
-            MapPosition(headPos, headPosRig);
-            MapPosition(leftHandPos, leftHandPosRig);
-            MapPosition(rightHandPos, rightHandPosRig);
+            //rightHand.gameObject.SetActive(false);
+            //leftHand.gameObject.SetActive(false);
+            //head.gameObject.SetActive(false);
+
+            MapPosition(head, headRig);
+            MapPosition(leftHand, leftHandRig);
+            MapPosition(rightHand, rightHandRig);
+
+            UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand), leftHandAnimator);
+            UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), rightHandAnimator);
+        }
+    }
+
+    void UpdateHandAnimation(InputDevice targetDevice, Animator handAnimator)
+    {
+        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
+        {
+            handAnimator.SetFloat("Trigger", triggerValue);
+        }
+        else
+        {
+            handAnimator.SetFloat("Trigger", 0);
+        }
+
+        if (targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
+        {
+            handAnimator.SetFloat("Grip", gripValue);
+        }
+        else
+        {
+            handAnimator.SetFloat("Grip", 0);
         }
     }
 
