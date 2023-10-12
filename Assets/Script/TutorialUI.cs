@@ -8,6 +8,7 @@ public class TutorialUI : MonoBehaviour
     [SerializeField] List<Sprite> sprites;
     [SerializeField] Image image;
     [SerializeField] Button nextBtn, prevBtn;
+    [SerializeField] GameObject uiTutorial;
 
     private int currentIndex = 0;
 

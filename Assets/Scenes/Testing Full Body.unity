@@ -3226,8 +3226,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 604141189}
   m_HandleRect: {fileID: 604141188}
   m_Direction: 2
-  m_Value: -0.00000061035155
-  m_Size: 0
+  m_Value: -0.0007446289
+  m_Size: 0.6517818
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17503,6 +17503,7 @@ GameObject:
   - component: {fileID: 982268958}
   - component: {fileID: 982268957}
   - component: {fileID: 982268961}
+  - component: {fileID: 982268962}
   m_Layer: 0
   m_Name: CanvasTutorial
   m_TagString: Untagged
@@ -17636,6 +17637,21 @@ MonoBehaviour:
   image: {fileID: 921754718}
   nextBtn: {fileID: 1778379879}
   prevBtn: {fileID: 275871200}
+  uiTutorial: {fileID: 0}
+--- !u!114 &982268962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982268955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd8cbd6400684c96b52252cba29ea83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1.5
+  targetY: 5
 --- !u!1 &983545508
 GameObject:
   m_ObjectHideFlags: 0
@@ -21515,7 +21531,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 100.000114}
+  m_AnchoredPosition: {x: 0, y: 100.07457}
   m_SizeDelta: {x: -36.96, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1234911395
@@ -66993,7 +67009,7 @@ PrefabInstance:
     - target: {fileID: 1095794334153864556, guid: 2b1d5481876a640318a67c9d709dc706,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 129.11006
+      value: 129.16905
       objectReference: {fileID: 0}
     - target: {fileID: 1132360322695043932, guid: 2b1d5481876a640318a67c9d709dc706,
         type: 3}
