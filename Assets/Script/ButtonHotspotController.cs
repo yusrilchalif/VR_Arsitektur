@@ -9,20 +9,22 @@ using DG.Tweening;
 public class ButtonHotspotController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     public GameObject panelInformation;
-    // public Transform target;
-    // public Vector3 panelPosition = new Vector3(0, 1.5f, 0);
 
     private Quaternion initialQuaternion;
-    //private LineRendererController lineRendererController;
 
-    // Start is called before the first frame update
+    [SerializeField] Transform targetObject;
+    [SerializeField] float scaleDuration = 1.5f;
+    [SerializeField] Vector3 minScale = new Vector3(0.5f, 0.5f, 1.0f);
+    [SerializeField] Vector3 maxScale = new Vector3(1.5f, 1.5f, 1.0f);
     void Start()
     {
         panelInformation.SetActive(false);
         initialQuaternion = transform.rotation;
 
-        // lineRendererController = GetComponent<LineRendererController>();
-        // lineRendererController.DisableLine();
+        if(targetObject != null)
+        {
+            PlayScaleAnimation();
+        }
     }
 
     // Update is called once per frame
@@ -70,5 +72,14 @@ public class ButtonHotspotController : MonoBehaviour, IPointerEnterHandler, IPoi
             // lineRendererController.EnableLine();
         }
     }
-    
+
+    void PlayScaleAnimation()
+    {
+        Sequence scaleSequence = DOTween.Sequence();
+
+        scaleSequence.Append(targetObject.DOScale(maxScale, scaleDuration));
+        scaleSequence.AppendInterval(1.0f);
+        scaleSequence.Append(targetObject.DOScale(minScale, scaleDuration));
+        scaleSequence.SetLoops(-1);
+    }
 }

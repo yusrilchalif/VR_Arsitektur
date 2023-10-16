@@ -3226,8 +3226,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 604141189}
   m_HandleRect: {fileID: 604141188}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0
+  m_Value: -0.000021362304
+  m_Size: 0.6665625
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3420,6 +3420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RenderMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
@@ -3759,8 +3764,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205232313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.6, y: 1.7, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 187724135}
@@ -3768,7 +3773,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.5, y: 43.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 698.6, y: 406.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &205232315
@@ -3887,6 +3892,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 333856376}
+  targetObject: {fileID: 0}
+  scaleDuration: 1.5
+  minScale: {x: 0.5, y: 0.5, z: 1}
+  maxScale: {x: 1.5, y: 1.5, z: 1}
 --- !u!114 &214346574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6224,7 +6233,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
@@ -7679,6 +7688,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RenderMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
@@ -9191,6 +9205,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 1379484671}
+  targetObject: {fileID: 0}
+  scaleDuration: 1.5
+  minScale: {x: 0.5, y: 0.5, z: 1}
+  maxScale: {x: 1.5, y: 1.5, z: 1}
 --- !u!114 &511810955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9823,6 +9841,8 @@ GameObject:
   - component: {fileID: 546227762}
   - component: {fileID: 546227761}
   - component: {fileID: 546227760}
+  - component: {fileID: 546227765}
+  - component: {fileID: 546227764}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9847,10 +9867,10 @@ RectTransform:
   m_Father: {fileID: 815832981}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 40.51, y: 52.72}
-  m_SizeDelta: {x: 719.7842, y: 600}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -13.6, y: 2.1}
+  m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &546227760
 MonoBehaviour:
@@ -9932,6 +9952,44 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &546227764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546227757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.25490198}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8bc352d9be95f4801857e86f7ab88b81, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &546227765
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546227757}
+  m_CullTransparentMesh: 1
 --- !u!64 &548006555
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13245,6 +13303,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
+      propertyPath: m_AspectRatio
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
+        type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -13466,6 +13529,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 64401562}
+  targetObject: {fileID: 0}
+  scaleDuration: 1.5
+  minScale: {x: 0.5, y: 0.5, z: 1}
+  maxScale: {x: 1.5, y: 1.5, z: 1}
 --- !u!114 &764561815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15106,6 +15173,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 1612610589}
+  targetObject: {fileID: 0}
+  scaleDuration: 1.5
+  minScale: {x: 0.5, y: 0.5, z: 1}
+  maxScale: {x: 1.5, y: 1.5, z: 1}
 --- !u!114 &841670259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18032,6 +18103,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RenderMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
@@ -21531,7 +21607,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 100.00006}
+  m_AnchoredPosition: {x: 0, y: 100.00217}
   m_SizeDelta: {x: -36.96, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1234911395
@@ -23301,6 +23377,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 1576099329}
+  targetObject: {fileID: 0}
+  scaleDuration: 1.5
+  minScale: {x: 0.5, y: 0.5, z: 1}
+  maxScale: {x: 1.5, y: 1.5, z: 1}
 --- !u!1 &1317235494
 GameObject:
   m_ObjectHideFlags: 0
@@ -24228,6 +24308,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
+      propertyPath: m_AspectRatio
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
+        type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -24999,6 +25084,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RenderMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
@@ -26241,6 +26331,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
+      propertyPath: m_AspectRatio
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
+        type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -26262,7 +26357,7 @@ PrefabInstance:
     - target: {fileID: 3516857995048794726, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3516857995048794727, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
@@ -27558,6 +27653,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 379214562}
+  targetObject: {fileID: 0}
+  scaleDuration: 1.5
+  minScale: {x: 0.5, y: 0.5, z: 1}
+  maxScale: {x: 1.5, y: 1.5, z: 1}
 --- !u!114 &1435439115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29525,6 +29624,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
+      propertyPath: m_AspectRatio
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
+        type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -29678,7 +29782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1560184912
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30474,6 +30578,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 815832980}
+  targetObject: {fileID: 1611544426}
+  scaleDuration: 1.5
+  minScale: {x: 0.5, y: 0.5, z: 1}
+  maxScale: {x: 1.5, y: 1.5, z: 1}
 --- !u!114 &1611544428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31708,6 +31816,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 33140693}
+  targetObject: {fileID: 0}
+  scaleDuration: 1.5
+  minScale: {x: 0.5, y: 0.5, z: 1}
+  maxScale: {x: 1.5, y: 1.5, z: 1}
 --- !u!114 &1688717355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37433,6 +37545,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 1068352924}
+  targetObject: {fileID: 0}
+  scaleDuration: 1.5
+  minScale: {x: 0.5, y: 0.5, z: 1}
+  maxScale: {x: 1.5, y: 1.5, z: 1}
 --- !u!114 &2045868772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55987,6 +56103,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
         type: 3}
+      propertyPath: m_AspectRatio
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516857995048794725, guid: 8d5c652d822954a0aad35ae5518eaab4,
+        type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -67009,7 +67130,7 @@ PrefabInstance:
     - target: {fileID: 1095794334153864556, guid: 2b1d5481876a640318a67c9d709dc706,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 129.11002
+      value: 129.11119
       objectReference: {fileID: 0}
     - target: {fileID: 1132360322695043932, guid: 2b1d5481876a640318a67c9d709dc706,
         type: 3}
