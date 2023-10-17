@@ -3226,8 +3226,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 604141189}
   m_HandleRect: {fileID: 604141188}
   m_Direction: 2
-  m_Value: -0.000021362304
-  m_Size: 0.6665625
+  m_Value: -0.0000012207031
+  m_Size: 0.6666569
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3892,7 +3892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 333856376}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 214346572}
   scaleDuration: 1.5
   minScale: {x: 0.5, y: 0.5, z: 1}
   maxScale: {x: 1.5, y: 1.5, z: 1}
@@ -9205,7 +9205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 1379484671}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 511810953}
   scaleDuration: 1.5
   minScale: {x: 0.5, y: 0.5, z: 1}
   maxScale: {x: 1.5, y: 1.5, z: 1}
@@ -13529,7 +13529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 64401562}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 764561813}
   scaleDuration: 1.5
   minScale: {x: 0.5, y: 0.5, z: 1}
   maxScale: {x: 1.5, y: 1.5, z: 1}
@@ -15173,7 +15173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 1612610589}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 841670257}
   scaleDuration: 1.5
   minScale: {x: 0.5, y: 0.5, z: 1}
   maxScale: {x: 1.5, y: 1.5, z: 1}
@@ -21607,7 +21607,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 100.00217}
+  m_AnchoredPosition: {x: 0, y: 100.00017}
   m_SizeDelta: {x: -36.96, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1234911395
@@ -23377,7 +23377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 1576099329}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1316787031}
   scaleDuration: 1.5
   minScale: {x: 0.5, y: 0.5, z: 1}
   maxScale: {x: 1.5, y: 1.5, z: 1}
@@ -27653,7 +27653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 379214562}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1435439113}
   scaleDuration: 1.5
   minScale: {x: 0.5, y: 0.5, z: 1}
   maxScale: {x: 1.5, y: 1.5, z: 1}
@@ -31816,7 +31816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 33140693}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1688717353}
   scaleDuration: 1.5
   minScale: {x: 0.5, y: 0.5, z: 1}
   maxScale: {x: 1.5, y: 1.5, z: 1}
@@ -37545,7 +37545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelInformation: {fileID: 1068352924}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 2045868770}
   scaleDuration: 1.5
   minScale: {x: 0.5, y: 0.5, z: 1}
   maxScale: {x: 1.5, y: 1.5, z: 1}
@@ -67130,7 +67130,7 @@ PrefabInstance:
     - target: {fileID: 1095794334153864556, guid: 2b1d5481876a640318a67c9d709dc706,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 129.11119
+      value: 129.10939
       objectReference: {fileID: 0}
     - target: {fileID: 1132360322695043932, guid: 2b1d5481876a640318a67c9d709dc706,
         type: 3}
