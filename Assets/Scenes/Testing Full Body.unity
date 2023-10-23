@@ -3379,8 +3379,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 604141189}
   m_HandleRect: {fileID: 604141188}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0
+  m_Value: -0.000050048828
+  m_Size: 0.64622295
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7167,7 +7167,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
@@ -7956,9 +7956,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 396959407}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WaterSpringkleGroup
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20355,9 +20355,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 998020273}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PipaAirKotorGroup
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20436,9 +20436,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1012044939}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ACGroup
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23774,7 +23774,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 100.00003}
+  m_AnchoredPosition: {x: 0, y: 100.00507}
   m_SizeDelta: {x: -36.96, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1234911395
@@ -43112,9 +43112,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2097129086}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PipaAirHujanGroup
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44257,9 +44257,9 @@ GameObject:
   - component: {fileID: 1791956459909020930}
   - component: {fileID: 6000110352565886347}
   - component: {fileID: 1845041795}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa.007
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -45223,9 +45223,9 @@ GameObject:
   - component: {fileID: 6613326268319352442}
   - component: {fileID: 5299873227292790789}
   - component: {fileID: 266789801}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -46313,7 +46313,7 @@ GameObject:
   - component: {fileID: 9011956234204970126}
   - component: {fileID: 3073674539448281952}
   - component: {fileID: 2028601640}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 2.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46675,7 +46675,7 @@ GameObject:
   - component: {fileID: 2588881023569722088}
   - component: {fileID: 1751253475552693173}
   - component: {fileID: 330868348}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle3.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47140,7 +47140,7 @@ GameObject:
   - component: {fileID: 3755094861280084878}
   - component: {fileID: 6160413130966195948}
   - component: {fileID: 741660055}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle3.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47432,9 +47432,9 @@ GameObject:
   - component: {fileID: 796482885487420794}
   - component: {fileID: 6919808210233317504}
   - component: {fileID: 1473399090}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Jendela TL L3
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -48593,7 +48593,7 @@ GameObject:
   - component: {fileID: 4032616707914649606}
   - component: {fileID: 1127546085065177909}
   - component: {fileID: 1083990826}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51142,7 +51142,7 @@ GameObject:
   - component: {fileID: 7255404640546728463}
   - component: {fileID: 1019963683658671102}
   - component: {fileID: 761521418}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 1.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51477,7 +51477,7 @@ GameObject:
   - component: {fileID: 5209390948852231360}
   - component: {fileID: 5442685915915942445}
   - component: {fileID: 422529965}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52064,7 +52064,7 @@ GameObject:
   - component: {fileID: 905994124624251620}
   - component: {fileID: 4156776373535546597}
   - component: {fileID: 198257013}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 2.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52514,9 +52514,9 @@ GameObject:
   - component: {fileID: 4265076224279906666}
   - component: {fileID: 1997914307280249114}
   - component: {fileID: 136204257}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Jendela TL L2
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -52584,9 +52584,9 @@ GameObject:
   - component: {fileID: 8158231924026149610}
   - component: {fileID: 6144280149419005300}
   - component: {fileID: 1847213780}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa.003
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -52603,7 +52603,7 @@ GameObject:
   - component: {fileID: 4002589539145642446}
   - component: {fileID: 5928722922599142366}
   - component: {fileID: 1560705721}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55652,9 +55652,9 @@ GameObject:
   - component: {fileID: 2148187081088558366}
   - component: {fileID: 158848163098265439}
   - component: {fileID: 360158792}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plafon.001
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -58923,7 +58923,7 @@ GameObject:
   - component: {fileID: 1075882123019409134}
   - component: {fileID: 8713936505962762114}
   - component: {fileID: 1624321456}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59084,9 +59084,9 @@ GameObject:
   - component: {fileID: 2960744349459444578}
   - component: {fileID: 5412292712423944630}
   - component: {fileID: 1275614028}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa Rembesan hujan.002
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -62689,7 +62689,7 @@ GameObject:
   - component: {fileID: 6651289346441546540}
   - component: {fileID: 1157980400306660657}
   - component: {fileID: 381838229}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63154,9 +63154,9 @@ GameObject:
   - component: {fileID: 5548161634048177393}
   - component: {fileID: 6968459331596887614}
   - component: {fileID: 2146047700}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plafon.003
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -63223,7 +63223,7 @@ GameObject:
   - component: {fileID: 5789242334406307074}
   - component: {fileID: 4472628917678379649}
   - component: {fileID: 18535340}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63257,9 +63257,9 @@ GameObject:
   - component: {fileID: 5991432560939381516}
   - component: {fileID: 4116412134421755954}
   - component: {fileID: 1267861543}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa.004
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -63851,9 +63851,9 @@ GameObject:
   - component: {fileID: 4878647652190124419}
   - component: {fileID: 1157963039400596365}
   - component: {fileID: 391986782}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa.002
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -65016,9 +65016,9 @@ GameObject:
   - component: {fileID: 383683095662101237}
   - component: {fileID: 9179165792188078078}
   - component: {fileID: 299224209}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa.005
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -66855,7 +66855,7 @@ GameObject:
   - component: {fileID: 6695364982432235887}
   - component: {fileID: 4899619995372147009}
   - component: {fileID: 1268326399}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67406,7 +67406,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d1641786f5ac416458dc8cdc7ad150b7, type: 2}
@@ -67934,9 +67934,9 @@ GameObject:
   - component: {fileID: 8079786310681275571}
   - component: {fileID: 8769396642886330898}
   - component: {fileID: 788335387}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 'Pipa Air Bersih '
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -68905,9 +68905,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3726123059831959926}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central Group 2.001
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -69056,9 +69056,9 @@ GameObject:
   - component: {fileID: 6333669525988337563}
   - component: {fileID: 8874780446084018779}
   - component: {fileID: 454335316}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Jendela TL L4
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -69294,7 +69294,7 @@ GameObject:
   - component: {fileID: 4988711503856218786}
   - component: {fileID: 5735935383217914692}
   - component: {fileID: 484324455}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70316,7 +70316,7 @@ GameObject:
   - component: {fileID: 951630070172621034}
   - component: {fileID: 6102618493534840098}
   - component: {fileID: 534919961}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 2.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70840,7 +70840,7 @@ GameObject:
   - component: {fileID: 442582356939799271}
   - component: {fileID: 9086487862065133263}
   - component: {fileID: 851909163}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70856,9 +70856,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1823433827119198550}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central Group 2.002
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -72174,9 +72174,9 @@ GameObject:
   - component: {fileID: 7454779373555435488}
   - component: {fileID: 6669849488144039488}
   - component: {fileID: 586998114}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central.004
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -73461,9 +73461,9 @@ GameObject:
   - component: {fileID: 1877872546937134806}
   - component: {fileID: 6078115903038440702}
   - component: {fileID: 576943608}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lift
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -74297,9 +74297,9 @@ GameObject:
   - component: {fileID: 2842165239900715532}
   - component: {fileID: 6408463085316150362}
   - component: {fileID: 2995989967065932713}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plafon
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -74622,9 +74622,9 @@ GameObject:
   - component: {fileID: 6858927352599469428}
   - component: {fileID: 3729962932038099334}
   - component: {fileID: 74939583}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa Rembesan hujan
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -75347,7 +75347,7 @@ GameObject:
   - component: {fileID: 8121449221195104290}
   - component: {fileID: 6798909095945731163}
   - component: {fileID: 1947189828}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76003,7 +76003,7 @@ GameObject:
   - component: {fileID: 6764262698875513052}
   - component: {fileID: 4851205355112408409}
   - component: {fileID: 1719220568}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 4.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77198,9 +77198,9 @@ GameObject:
   - component: {fileID: 7437459516577772962}
   - component: {fileID: 3099991051065907431}
   - component: {fileID: 764721683}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tiang Gedung
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -80283,7 +80283,7 @@ GameObject:
   - component: {fileID: 5904804418093818578}
   - component: {fileID: 6337005115179046183}
   - component: {fileID: 834397813}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82836,9 +82836,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2659465400334703723}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central Group 2
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -85262,7 +85262,7 @@ GameObject:
   - component: {fileID: 8964174756266841535}
   - component: {fileID: 3715958867243673097}
   - component: {fileID: 319829535}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 1.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86489,7 +86489,7 @@ PrefabInstance:
     - target: {fileID: 1095794334153864556, guid: 2b1d5481876a640318a67c9d709dc706,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 129.10977
+      value: 129.11331
       objectReference: {fileID: 0}
     - target: {fileID: 1132360322695043932, guid: 2b1d5481876a640318a67c9d709dc706,
         type: 3}
@@ -89081,7 +89081,7 @@ GameObject:
   - component: {fileID: 7484701124774363764}
   - component: {fileID: 8387985160118295067}
   - component: {fileID: 971068179}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89116,9 +89116,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3447655867233360948}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle Group.001
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -90092,9 +90092,9 @@ GameObject:
   - component: {fileID: 2996072279171600141}
   - component: {fileID: 2973864807474932902}
   - component: {fileID: 1426639037}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Frame JendelaTL L1
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -90351,7 +90351,7 @@ GameObject:
   - component: {fileID: 5872331080794322163}
   - component: {fileID: 2244304525293009972}
   - component: {fileID: 1428011999}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90670,7 +90670,7 @@ GameObject:
   - component: {fileID: 2587271392403893676}
   - component: {fileID: 4991307536779503721}
   - component: {fileID: 1469633799}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 4.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92499,7 +92499,7 @@ GameObject:
   - component: {fileID: 6714173123349808104}
   - component: {fileID: 2560556771042561722}
   - component: {fileID: 989173002}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 3.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93161,7 +93161,7 @@ GameObject:
   - component: {fileID: 6804212201389555099}
   - component: {fileID: 5126629437598408734}
   - component: {fileID: 798262093}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93916,9 +93916,9 @@ GameObject:
   - component: {fileID: 4451079943014500026}
   - component: {fileID: 5232239852648938583}
   - component: {fileID: 454413604}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plafon.002
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -95524,9 +95524,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7444740548166012901}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle Group.002
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -96595,7 +96595,7 @@ GameObject:
   - component: {fileID: 5153149403293706054}
   - component: {fileID: 344062159867189052}
   - component: {fileID: 755767890}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97966,9 +97966,9 @@ GameObject:
   - component: {fileID: 2494382018880321728}
   - component: {fileID: 5258164188356443775}
   - component: {fileID: 1935355757}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa Rembesan hujan.003
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -98004,7 +98004,7 @@ GameObject:
   - component: {fileID: 1176655525992525159}
   - component: {fileID: 8762118108102528898}
   - component: {fileID: 218465444}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98997,9 +98997,9 @@ GameObject:
   - component: {fileID: 8161718741534280503}
   - component: {fileID: 5259999499960097023}
   - component: {fileID: 1445323642}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa.006
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -99520,9 +99520,9 @@ GameObject:
   - component: {fileID: 4963058336975201727}
   - component: {fileID: 5620883601694173565}
   - component: {fileID: 844704605}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa Rembesan hujan.001
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -100159,9 +100159,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7901356336646742383}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle Group.003
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -100699,7 +100699,7 @@ GameObject:
   - component: {fileID: 1626205732118510082}
   - component: {fileID: 5785323315194105856}
   - component: {fileID: 1161480760}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 1.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101483,7 +101483,7 @@ GameObject:
   - component: {fileID: 2940674548833829380}
   - component: {fileID: 9100493636538401346}
   - component: {fileID: 1281227937}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102588,7 +102588,7 @@ GameObject:
   - component: {fileID: 1740740826320344079}
   - component: {fileID: 1773307793893612949}
   - component: {fileID: 2026154058}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102872,7 +102872,7 @@ GameObject:
   - component: {fileID: 8757968931348214594}
   - component: {fileID: 4881618469518595133}
   - component: {fileID: 972446567}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle3.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104194,7 +104194,7 @@ GameObject:
   - component: {fileID: 7750754711581874717}
   - component: {fileID: 4740034247067540352}
   - component: {fileID: 906820752}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104501,7 +104501,7 @@ GameObject:
   - component: {fileID: 5142530719082704842}
   - component: {fileID: 6942667743610108222}
   - component: {fileID: 469038104}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106636,7 +106636,7 @@ GameObject:
   - component: {fileID: 8291710507415917822}
   - component: {fileID: 6047416455373156881}
   - component: {fileID: 2124228927}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107030,7 +107030,7 @@ GameObject:
   - component: {fileID: 7949354695645704289}
   - component: {fileID: 2538951948738220891}
   - component: {fileID: 1522112855}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107389,7 +107389,7 @@ GameObject:
   - component: {fileID: 7685543746249060155}
   - component: {fileID: 1481684600365311911}
   - component: {fileID: 466265938}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107542,9 +107542,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6519273768831859082}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle Group
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -108921,7 +108921,7 @@ GameObject:
   - component: {fileID: 4299139785720536852}
   - component: {fileID: 8789016602730655235}
   - component: {fileID: 1344494916}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109147,7 +109147,7 @@ GameObject:
   - component: {fileID: 7374974844196298594}
   - component: {fileID: 1359221451195244827}
   - component: {fileID: 47315823}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 4.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110088,9 +110088,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6401359529979939004}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central Group
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -110329,7 +110329,7 @@ GameObject:
   - component: {fileID: 7479262723518096986}
   - component: {fileID: 566660758572386413}
   - component: {fileID: 250367334}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Water Sprinkle2.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113089,9 +113089,9 @@ GameObject:
   - component: {fileID: 8081262822772913625}
   - component: {fileID: 6139577749820508625}
   - component: {fileID: 684968288}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipa.001
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
@@ -113108,7 +113108,7 @@ GameObject:
   - component: {fileID: 4861295445240224220}
   - component: {fileID: 3842403190215420882}
   - component: {fileID: 220945587}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 3.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114971,7 +114971,7 @@ GameObject:
   - component: {fileID: 3808049698866712893}
   - component: {fileID: 1682712225388886783}
   - component: {fileID: 89526518}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AC Central 3.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
