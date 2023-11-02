@@ -97,7 +97,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.4472136
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Metallic: 0.069
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -117,7 +117,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &3063287226808440140
+--- !u!114 &7049738510156180850
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
